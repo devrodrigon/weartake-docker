@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Loja virtual</title>
+
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="a">
+        <h1 class="logo title3"><a href="./index.html">Weartake</a></h1>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a class="categoriaHeaderTodos" href="index.html">Todos</a>
+            </li>
+            <li class="categoriaHeader">Acessórios</li>
+            <li class="categoriaHeader">Calçados</li>
+            <li class="categoriaHeader">Camisetas</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <main class="vitrine">
+        <ul class="produtos"></ul>
+      </main>
+      <aside class="lateral">
+        <label for="input" hidden>Digite aqui sua pesquisa</label>
+        <input id="input" type="text" placeholder="Digite aqui sua pesquisa" />
+        <button class="button" type="button">Pesquisar</button>
+
+        <section class="carrinho">
+          <header>
+            <h3 class="title3">Carrinho de Compras</h3>
+          </header>
+
+          <div class="carrinho-sem-item">
+            <h2 class="title2">Carrinho vazio</h2>
+            <span class="small">Adicione itens</span>
+          </div>
+
+          <div class="carrinho-com-item">
+            <ul class="produtosCarrinho"></ul>
+          </div>
+          <div class="infoCarrinho">
+            <div class="quantidade">
+              <span>Quantidade</span>
+              <span id="qtd"></span>
+            </div>
+            <div class="precoTotal">
+              <span>Total</span>
+              <span id="preco"></span>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>
